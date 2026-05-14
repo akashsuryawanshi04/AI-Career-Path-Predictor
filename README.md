@@ -1,6 +1,8 @@
 
 # AI Career Path Predictor
 
+# Decision Tree ML Model
+
 ## Project Overview
 
 AI Career Path Predictor is a Machine Learning web application that predicts the best technology career path based on a user's skills, interests, and abilities.
