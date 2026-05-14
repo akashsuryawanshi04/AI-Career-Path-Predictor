@@ -114,11 +114,6 @@ python app.py
 
 ---
 
-## Screenshots
-
-Add screenshots here after running the project.
-
----
 
 ## Future Improvements
 
