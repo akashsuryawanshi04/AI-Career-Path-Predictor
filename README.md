@@ -91,7 +91,7 @@ career-path-predictor/
 ### 1. Clone Project
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/akashsuryawanshi04/AI-Career-Path-Predictor
 ```
 
 ### 2. Install Dependencies
