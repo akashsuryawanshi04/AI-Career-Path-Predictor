@@ -34,13 +34,13 @@ Predicted career paths:
 ![Home Page](screenshots/sc1.jpg)
 
 ### Prediction Form
-![Prediction Form](screenshots/sc3.jpg)
+![Prediction Form](screenshots/sc2.jpg)
 
 ### Prediction Result
 ![Result](screenshots/sc4.jpg)
 
 ### Dashboard
-![Dashboard](screenshots/sc2.jpg)
+![Dashboard](screenshots/sc3.jpg)
 
 
 ---
