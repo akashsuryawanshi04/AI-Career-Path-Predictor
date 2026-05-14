@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="dashboard-title">
+        <h1>Machine Learning Dashboard</h1>
+        <p>Visual insights from the trained Decision Tree model</p>
+    </div>
+
+    <div class="chart-grid">
+
+        <div class="chart-card">
+            <h3>Career Distribution</h3>
+            <img src="{{ url_for('static', filename='images/career_distribution.png') }}">
+        </div>
+
+        <div class="chart-card">
+            <h3>Correlation Heatmap</h3>
+            <img src="{{ url_for('static', filename='images/correlation_heatmap.png') }}">
+        </div>
+
+        <div class="chart-card">
+            <h3>Feature Importance</h3>
+            <img src="{{ url_for('static', filename='images/feature_importance.png') }}">
+        </div>
+
+        <div class="chart-card">
+            <h3>Decision Tree Visualization</h3>
+            <img src="{{ url_for('static', filename='images/decision_tree.png') }}">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

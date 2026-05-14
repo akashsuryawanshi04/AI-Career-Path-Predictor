@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="form-title">
+            <h2>Career Prediction Form</h2>
+            <p>Rate your skills and interests from 0 to 10</p>
+        </div>
+
+        <form action="/result" method="POST">
+
+            <div class="form-grid">
+
+                {% for field in [
+                "python_skill",
+                "java_skill",
+                "cpp_skill",
+                "javascript_skill",
+                "html_css_skill",
+                "sql_skill",
+                "machine_learning_interest",
+                "web_development_interest",
+                "data_analysis_interest",
+                "cybersecurity_interest",
+                "statistics_skill",
+                "problem_solving",
+                "communication_skill",
+                "creativity",
+                "logical_thinking",
+                "teamwork",
+                "cloud_computing_interest",
+                "networking_skill",
+                "debugging_skill",
+                "aptitude_score"
+                ] %}
+
+                <div class="input-group">
+                    <label>{{ field.replace('_', ' ').title() }}</label>
+
+                    {% if field == "aptitude_score" %}
+                    <input type="number" name="{{ field }}" min="0" max="100" required>
+                    {% else %}
+                    <input type="number" name="{{ field }}" min="0" max="10" required>
+                    {% endif %}
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            <button type="submit" class="btn submit-btn">
+                Predict Career Path
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

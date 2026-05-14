@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card result-box">
+
+        {% if error %}
+            <h2>{{ error }}</h2>
+
+        {% else %}
+
+        <h1>{{ prediction }}</h1>
+
+        <div class="confidence">
+            Confidence Score: {{ confidence }}%
+        </div>
+
+        <p>{{ career_info.description }}</p>
+
+        <div class="skills-box">
+            <h3>Recommended Skills & Technologies</h3>
+
+            <ul>
+                {% for skill in career_info.skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% endif %}
+
+        <a href="/predict" class="btn">Try Again</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
